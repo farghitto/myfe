@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Round Hand";
+  src: url("static_file/fonts/SnellBt-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Baskerville";
+  src: url("static_file/fonts/baskvl.ttf") format("truetype");
+}
+
+/* 1rem = 16px / 0.5rem = 8px / */
+header{
+
+  position: relative;
+  z-index: 2;
+}
+
+.purple_rect
+{
+  background-color: rgb(215, 212, 222);
+  border: 0.1rem solid rgb(131, 113, 156);
+  border-radius: 1rem;
+  margin: 1.2rem;
+}
+#text_header_rect{
+  z-index:2 ;
+  width: 77vw;
+}
+
+.purple_square
+{
+  background-color: rgb(215, 212, 222);
+  border: 0.1rem solid rgb(131, 113, 156);
+  border-radius: 1rem;
+  margin: 1rem;
+  width : 100%;
+  height :50%
+}
+#graph{
+
+  width : 80%;
+  height :45%
+}
+#info_graph
+{
+  width : 80%;
+  height :45%
+}
+#info_grid{
+  display : grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);;
+  gap :10px;
+  width: 100%;
+  height: 70%;
+}
+.element
+{
+  border: 0.1rem solid rgb(131, 113, 156);
+  border-radius: 1rem;
+  background-color: rgb(215, 212, 222);
+  
+  height: 100%;
+}
+
+
+#text_header{
+
+
+  font-size : 1.5rem;
+  /* font-family: "Baskerville", cursive; */
+  font-family: Round Hand, cursive;
+  text-align: center;
+  color: rgb(131, 113, 156); /* anche nero*/
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  
+}
+
+#image_supdx {
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  margin: 0;
+}
+
+#image_infsx {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
+  margin: 0;
+}
+
+.image_login {
+  width: 20vw;
+  height: 20vw;
+ 
+  z-index: 1;
+}
+
+
+#conteiner{
+  width: 85vw;
+  height: 80vh;
+  display: flex;
+  margin : 0;
+  position: relative;
+}
+#info_conteiner
+{
+  margin: 0;
+  width: 70%;
+  height: 100%;
+}
+#graph_conteiner
+{
+  margin: 0;
+  width: 30%;
+  height: 100%;
+}
