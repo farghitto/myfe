@@ -70,8 +70,9 @@
 
 
                     </div>
-                    <div id="text_grid_rect" class = 'purple_rect'>
-                        <p id="text_info_grid" class="text"> Ti diamo il benvenuto in questa schermata trovi il riepilogo di tutta la tua attivita con noi</p>
+                    <div id="text_grid_rect" class = 'element'>
+                        <h3 id="text_title_news" class="animated-text2"> News</h3>
+                        <h4 id="text_news" class="animated-text">Nuovi premi</h4>
                     </div>
 
                 </div>
@@ -80,14 +81,28 @@
                         <div id = 'chart'></div>
                         
                     </div>
-                    <div id="info_graph" class = 'purple_square'>
-                        
+                    <div id="info_graph" class = 'element'>
+                      <p id = el1p> Premio</p>
+                     <!--  <button id ="button_prize">Richiedi</button> -->
+                      <button class="button-17" role="button">Button 17</button>
+
                     </div>
                 </div>
 
             </div>
         </div>
     </body>
+
+    <footer>
+      <div id="footer_rect" >
+        <img
+        id="image_logo"
+        class="image_login"
+        src="static_file/logo.png"
+        alt="Immagine"
+      />
+      </div>
+  </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script>
@@ -141,7 +156,7 @@
       }; */
 
       var options = {
-        series: [75],
+        series: [35],
         chart: {
         height: 350,
         type: 'radialBar',
