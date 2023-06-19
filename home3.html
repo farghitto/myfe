@@ -126,66 +126,61 @@ class="image_login"
 src="static_file/triangoloinf.png"
 alt="Immagine"
 />
-<div id = 'page'>
+
     <div id = 'conteiner'>
-        <div id="info_conteiner">
-            <div id ='info_grid'>
-                <div id='el1' class = 'element'>
-                    <p id = el1p> Totale Fatturato</p>
-                    <h2 id = el1h> 16700</h2>
-                </div>
-                <div id='el2' class = 'element'>
-                    <p id = el2p> Totale Fatturato</p>
-                    <h2 id = el2h> 16700</h2>
-                </div>
-                <div id='el3' class = 'element'>
-                    <p id = el3p> Totale Fatturato</p>
-                    <h2 id = el3h> 16700</h2>
-                </div>
-                <div id='el4' class = 'element'>
-                    <p id = el4p> Totale Fatturato</p>
-                    <h2 id = el4h> 16700</h2>
-                </div>
-                <div id='el5' class = 'element'>
-                    <p id = el5p> Totale Fatturato</p>
-                    <h2 id = el5h> 16700</h2>
-                </div>
-                <div id='el6' class = 'element'>
-                    <p id = el6p> Totale Fatturato</p>
-                    <h2 id = el6h> 16700</h2>
-                </div>
-                <div id='el7' class = 'element'>
-                    <p id = el7p> Totale Fatturato</p>
-                    <h2 id = el7h> 16700</h2>
-                </div>
-                <div id='el8' class = 'element'>
-                    <p id = el8p> Totale Fatturato</p>
-                    <h2 id = el8h> 16700</h2>
-                </div>
+      <div id="info_conteiner">
+          <div id ='info_grid_conteiner'>
+            <button id="button_element" class="button_personalizzato" role="button">
+              <p id = el1p> Totale Fatturato</p>
+              <h2 id = el1h> 16700</h2>  
+            </button>
+              <button id="button_element" class="button_personalizzato" role="button">
+                <p id = el1p> Totale Fatturato</p>
+                <h2 id = el1h> 16700</h2>  
+              </button>
+              <button id="button_element" class="button_personalizzato" role="button">
+                <p id = el1p> Totale Fatturato</p>
+                <h2 id = el1h> 16700</h2>  
+              </button>
+              <button id="button_element" class="button_personalizzato" role="button">
+                <p id = el1p> Totale Fatturato</p>
+                <h2 id = el1h> 16700</h2>  
+              </button>
+              <button id="button_element" class="button_personalizzato" role="button">
+                <p id = el1p> Totale Fatturato</p>
+                <h2 id = el1h> 16700</h2>  
+              </button>
+              <button id="button_element" class="button_personalizzato" role="button">
+                <p id = el1p> Totale Fatturato</p>
+                <h2 id = el1h> 16700</h2>  
+              </button>
+              <button id="button_element" class="button_personalizzato" role="button">
+                <p id = el1p> Totale Fatturato</p>
+                <h2 id = el1h> 16700</h2>  
+              </button>
+              <button id="button_element" class="button_personalizzato" role="button">
+                <p id = el1p> Totale Fatturato</p>
+                <h2 id = el1h> 16700</h2>  
+              </button>
+                 
+              
 
 
-            </div>
-            <div id="text_grid_rect" class = 'element'>
-                <h3 id="text_title_news" class="animated-text2"> News</h3>
-                <h4 id="text_news" class="animated-text">Nuovi premi</h4>
-            </div>
-
-        </div>
-        <div id="graph_conteiner">
+          </div>
+          <div id="graph_conteiner">
             <div id="graph" class = 'purple_square'>
                 <div id = 'chart'></div>
-                
             </div>
-            <div id="info_graph" class = 'element'>
-              <p id = el1p> Premio</p>
-             <!--  <button id ="button_prize">Richiedi</button> -->
-              <button class="button-17" role="button">Button 17</button>
-
-            </div>
-        </div>
-
+            <button id="button_prize" class="button_personalizzato" role="button">Richiedi Premio</button>
+          </div>
+      
+      </div>
+      <div id="news_rect" class = 'element'>
+        <h4 id="text_title_news" class="animated-text"> News</h4>
+        <h4 id="text_news">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti molestias officiis facere omnis reprehenderit pariatur quibusdam eveniet aliquid amet itaque accusamus eaque minus consequuntur, adipisci veritatis soluta et, minima architecto!</h4>
+      </div>
     </div>
-</div>
+
 
 
 <footer>
@@ -207,17 +202,18 @@ alt="Immagine"
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script>
 
-   /*  var options = {
-        series: [47],
+     var options = {
+        series: [99],
         chart: {
-        height: 350,
+        height: '125%',
+        
         type: 'radialBar',
         offsetY: -10
       },
       plotOptions: {
         radialBar: {
-          startAngle: -135,
-          endAngle: 135,
+          startAngle: -100,
+          endAngle: 100,
           dataLabels: {
             name: {
               fontSize: '16px',
@@ -227,7 +223,7 @@ alt="Immagine"
             value: {
               offsetY: 76,
               fontSize: '22px',
-              color: undefined,
+              color: 'black',
               formatter: function (val) {
                 return val + "%";
               }
@@ -239,23 +235,27 @@ alt="Immagine"
         type: 'gradient',
         gradient: {
             shade: 'dark',
-            shadeIntensity: 0.15,
+            gradientToColors: ['#f9bc2c'],
+            type: 'horizontal',
+            shadeIntensity: 0,
             inverseColors: false,
             opacityFrom: 1,
             opacityTo: 1,
-            stops: [0, 50, 65, 91]
+            stops: [0,50,100]
+            
         },
-        colors:'#83719C',
+        colors: ['#FFFF00', '#FFD700']
+        
       },
       stroke: {
         dashArray: 4
       },
       labels: ['Obiettivo'],
-      colors:['#83719C', '#83719C', '#83719C']
+      colors:['black', '#83719C']
       
-      }; */
+      }; 
 
-      var options = {
+      /* var options = {
         series: [35],
         chart: {
         height: 350,
@@ -333,7 +333,7 @@ alt="Immagine"
         lineCap: 'round'
       },
       labels: ['Obiettivo'],
-      };
+      }; */
 
       var chart = new ApexCharts(document.querySelector("#chart"), options);
       chart.render();  
