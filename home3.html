@@ -499,6 +499,21 @@ alt="Immagine"
         colors: ['#FFFF00', '#FFD700']
         
       },
+      states: {
+        hover: {
+            filter: {
+                type: 'none',
+            }
+        },
+        
+        active: {
+            filter: {
+                type: 'none',
+            }
+        },
+        
+    },
+
       stroke: {
         dashArray: 4
       },
@@ -507,85 +522,6 @@ alt="Immagine"
       
       }; 
 
-      /* var options = {
-        series: [35],
-        chart: {
-        height: 350,
-        type: 'radialBar',
-        toolbar: {
-          show: false
-        }
-      },
-      plotOptions: {
-        radialBar: {
-          startAngle: -135,
-          endAngle: 225,
-           hollow: {
-            margin: 0,
-            size: '70%',
-            background: '#D7D4DE',
-            image: undefined,
-            imageOffsetX: 0,
-            imageOffsetY: 0,
-            position: 'front',
-            dropShadow: {
-              enabled: true,
-              top: 3,
-              left: 0,
-              blur: 4,
-              opacity: 0.24
-            }
-          },
-          track: {
-            background: '#D7D4DE',
-            strokeWidth: '67%',
-            margin: 0, // margin is in pixels
-            dropShadow: {
-              enabled: true,
-              top: -3,
-              left: 0,
-              blur: 4,
-              opacity: 0.35
-            }
-          },
-      
-          dataLabels: {
-            show: true,
-            name: {
-              offsetY: -10,
-              show: true,
-              color: '#83719C',
-              fontSize: '17px'
-            },
-            value: {
-              formatter: function(val) {
-                return parseInt(val);
-              },
-              color: '#83719C',
-              fontSize: '36px',
-              show: true,
-            }
-          }
-        }
-      },
-      fill: {
-        type: 'gradient',
-        gradient: {
-          shade: 'dark',
-          type: 'horizontal',
-          shadeIntensity: 0.5,
-          gradientToColors: ['#83719C'],
-          inverseColors: true,
-          opacityFrom: 1,
-          opacityTo: 1,
-          stops: [0, 100]
-        }
-      },
-      stroke: {
-        lineCap: 'round'
-      },
-      labels: ['Obiettivo'],
-      }; */
 
       var chart = new ApexCharts(document.querySelector("#chart"), options);
       chart.render();  
